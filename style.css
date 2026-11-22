@@ -91,6 +91,7 @@ img {
   opacity: .65;
 }
 .nav .nav-cta {
+  border-radius: 8px;
   background: var(--ink);
   color: white;
   padding: .9rem 1.15rem;
@@ -169,6 +170,7 @@ h1 em, .intro-heading h2 em, .gallery-heading h2 em, .process h2 em, .contact h2
   margin: 2rem 0 1.2rem;
 }
 .button {
+  border-radius: 8px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -231,14 +233,13 @@ h1 em, .intro-heading h2 em, .gallery-heading h2 em, .process h2 em, .contact h2
 .service-grid {
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  border-top: 1px solid var(--line);
-  border-left: 1px solid var(--line);
+  gap: .75rem;
 }
 .service-card {
+  border-radius: 10px;
   min-height: 310px;
   padding: 1.55rem 1.5rem 1.3rem;
-  border-right: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
+  border: 1px solid var(--line);
   display: flex;
   flex-direction: column;
   transition: background .25s;
@@ -292,6 +293,7 @@ h1 em, .intro-heading h2 em, .gallery-heading h2 em, .process h2 em, .contact h2
   gap: 1rem;
 }
 .photo-card {
+  border-radius: 12px;
   margin: 0;
   position: relative;
   min-height: 400px;
@@ -483,6 +485,7 @@ footer>a:last-child {
     height: 32px;
   }
   .menu-toggle {
+    border-radius: 8px;
     display: flex;
     width: 42px;
     height: 42px;
@@ -807,6 +810,7 @@ footer {
 .photo-card::after { pointer-events: none; z-index: 2; }
 .photo-card figcaption { pointer-events: none; z-index: 3; }
 .work-video {
+  border-radius: 12px;
   margin-top: 2rem;
   padding: clamp(1.25rem, 6vw, 4rem);
   display: grid;
@@ -818,7 +822,7 @@ footer {
 }
 .work-video h3 { margin: 0; font-size: clamp(1.8rem, 4vw, 3.4rem); letter-spacing: -.06em; line-height: 1.05; }
 .work-video p { max-width: 32ch; line-height: 1.65; color: #e0e7df; }
-.work-video video { display: block; width: 100%; aspect-ratio: 9 / 16; object-fit: contain; background: #0a130e; }
+.work-video video { border-radius: 8px; display: block; width: 100%; aspect-ratio: 9 / 16; object-fit: contain; background: #0a130e; }
 .contact-main { padding-bottom: 0; }
 .contact-phone:focus-visible, .brand:focus-visible, .menu-toggle:focus-visible { outline: 3px solid #a2bf57; outline-offset: 4px; }
 
